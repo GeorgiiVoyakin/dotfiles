@@ -7,4 +7,5 @@ return require('packer').startup(function()
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
+    use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
 end)
