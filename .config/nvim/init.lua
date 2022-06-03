@@ -77,6 +77,7 @@ require'lspconfig'.sumneko_lua.setup {
 
 -- Telescope
 require('telescope').load_extension('fzf')
+vim.keymap.set('n', '<C-p>', require('telescope.builtin').git_files, opts)
 
 -- Setup nvim-cmp.
 vim.opt.completeopt = { 'menu', 'menuone', 'noselect' }
